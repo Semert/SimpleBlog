@@ -1,0 +1,9 @@
+<h3>Comments</h3>
+<% @post.comments.each do |comment| %>
+  <div style="border:3px dashed #cccccc; border-radius:20px; padding:10px; margin:10px; background-color:#f2f2f2;">
+    <p><strong><%= comment.username %></strong>: <%= comment.body %>
+      <%= link_to '[X]', [comment.post, comment],
+                  method: :delete,
+                  data: { confirm: 'Are you sure?' } %> </p>
+    </div>
+    <% end %>

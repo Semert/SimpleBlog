@@ -1,0 +1,12 @@
+<h1>Blog Posts</h1>
+<% @posts.each do |post| %>
+
+
+<div class="p-3 mb-2 bg-light text-dark" style="border:2px solid grey; border-radius:7px; margin:10px;">
+  <h3> <%= post.title %> </h3>
+  <p> <%= post.body %> </p>
+  <%= link_to "Read More", post_path(post), :class => 'btn btn-dark'  %>
+</div>
+
+
+<% end %>
