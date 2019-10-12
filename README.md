@@ -1,4 +1,4 @@
-# README
+# SimpleBlog Ruby
 
 ## A Simple blog  create, read, update, destroy posts and Add Comments
 ## When you want to create post you have to log in.
